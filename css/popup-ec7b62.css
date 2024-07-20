@@ -1,0 +1,148 @@
+:root {
+  --white: white;
+  --black: black;
+}
+
+.body-special {
+  color: #fff;
+  text-align: left;
+  background-color: #000;
+}
+
+.main {
+  position: relative;
+}
+
+.heading-text-creative-team {
+  color: #f9cf14;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-top: 157px;
+  font-size: 75px;
+  line-height: 1.3;
+}
+
+.container {
+  padding-left: 230px;
+  padding-right: 230px;
+}
+
+.grid-3clmn-special {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: row;
+  display: grid;
+}
+
+.card-specialist {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-flow: column;
+  margin-bottom: 64px;
+  display: flex;
+}
+
+.card-specialist._1 {
+  cursor: pointer;
+}
+
+.name-specialist {
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.position-specialist {
+  color: #f9c299;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.position-specialist.left-align-special {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.pop-up {
+  background-color: #000000e6;
+  height: 100svh;
+  position: fixed;
+  inset: 0%;
+}
+
+.pop-up._1, .pop-up._2, .pop-up._3, .pop-up._4, .pop-up._5, .pop-up._6, .pop-up._7, .pop-up._8, .pop-up._9 {
+  display: none;
+}
+
+.name-big-text {
+  margin-bottom: 26px;
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.close {
+  margin-top: 100px;
+}
+
+.text-block {
+  line-height: 1.5;
+}
+
+.close-icon-special {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .heading-text-creative-team {
+    padding-top: 120px;
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .container.scroll {
+    overflow: auto;
+  }
+
+  .grid-3clmn-special {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .heading-text-creative-team {
+    font-size: 30px;
+  }
+
+  .container.scroll {
+    height: 100svh;
+  }
+
+  .grid-3clmn-special {
+    grid-template-columns: 1fr;
+  }
+
+  .pop-up._1, .pop-up._2, .pop-up._3, .pop-up._4, .pop-up._5, .pop-up._6, .pop-up._7, .pop-up._8, .pop-up._9 {
+    display: none;
+  }
+}
